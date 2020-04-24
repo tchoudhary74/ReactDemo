@@ -1,0 +1,137 @@
+{
+  "name": "Demo-project",
+  "version": "1.0.0",
+  "description": "User Demo",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reach/skip-nav": "^0.8.4",
+    "@typescript-eslint/experimental-utils": "^2.19.2",
+    "aws-api-gateway-client": "^0.2.17",
+    "aws-sdk": "^2.395.0",
+    "aws4": "^1.8.0",
+    "axios": "^0.19.0",
+    "babel-jest": "^24.9.0",
+    "bootstrap": "^4.4.1",
+    "browser-bunyan": "^1.5.3",
+    "cross-env": "^6.0.3",
+    "env-cmd": "^9.0.3",
+    "formik": "^1.5.8",
+    "i18next": "^17.0.6",
+    "jest": "^24.9.0",
+    "jest-environment-jsdom-fourteen": "0.1.0",
+    "jest-resolve": "24.7.1",
+    "jest-sonar-reporter": "^2.0.0",
+    "jest-watch-typeahead": "0.3.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-app-polyfill": "^1.0.5",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-date-picker": "^7.10.0",
+    "react-dom": "^16.11.0",
+    "react-google-recaptcha": "^2.0.1",
+    "react-i18next": "^10.13.1",
+    "react-redux": "^7.1.1",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-router-scroll-top": "^0.2.1",
+    "react-scripts": "^3.3.0",
+    "react-sticky-footer": "0.1.0-rc3",
+    "react-toastify": "^5.5.0",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.1.3",
+    "splunk-bunyan-logger": "^0.10.1",
+    "url": "^0.11.0",
+    "url-parse": "^1.4.7",
+    "uuid": "^3.4.0",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "env-script": "./node_modules/.bin/env-cmd -e",
+    "start": "npm run env-script dev react-scripts start",
+    "build": "npm run env-script dev react-scripts build",
+    "start-dev": "npm run env-script dev react-scripts start",
+    "build-dev": "npm run env-script dev react-scripts build",
+    "start-int": "npm run env-script int react-scripts start",
+    "build-int": "npm run env-script int react-scripts build",
+    "start-cons": "npm run env-script cons react-scripts start",
+    "build-cons": "npm run env-script cons react-scripts build",
+    "start-prod": "npm run env-script prod react-scripts start",
+    "build-prod": "npm run env-script prod react-scripts build",
+    "test": "jest",
+    "test:ci": "jest src/tests --ci --coverage --coverageDirectory ./coverage/unit-test --passWithNoTests --watchAll=false --testResultsProcessor ./node_modules/jest-sonar-reporter/index.js",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --format json -o ./reports/lint-report.json"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.8"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "setupFilesAfterEnv": [],
+    "testMatch": [
+      "<rootDir>/src/tests/**/*.{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jest-environment-jsdom-fourteen",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/src/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/src/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "modulePaths": [],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
+}

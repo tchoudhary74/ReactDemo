@@ -1,0 +1,13 @@
+.table-holder{ position: relative;  width: 100%; display: block; padding:10px;}
+.table-holder table{ border: 1px solid #ccc; width:100%; margin: 0px 0px; } 
+.table-holder table thead {}
+.table-holder table thead tr { background: #f1f1f1;}
+.table-holder table thead tr th{ border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px 20px; }
+.table-holder table thead tr td{ border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px 20px; }
+
+
+
+.table-holder table tbody {}
+.table-holder table tbody tr {}
+.table-holder table tbody tr:hover {background: #ccc; cursor: pointer;}
+.table-holder table tbody tr td{  border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px 20px;}
