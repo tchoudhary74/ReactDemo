@@ -37,8 +37,9 @@ class UserLogin extends Component {
         localStorage.setItem("token", token);
         localStorage.setItem("isChecked", true);
         toast.success("Login Succesfully");
-        console.log(this.props)
-        this.props.history.push("/home");
+        console.log(this.props);
+        window.location.href='/home'
+        //this.props.history.push("/home");
         console.log(token);
       })
       .catch(error => {

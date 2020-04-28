@@ -29,12 +29,12 @@ class App extends Component {
                 <Switch>
                   <Route exact path='/' component={LoginPage} />
                   <Route path='/pagenotfound' component={PageNotFound} />
+                  <Route path='/home' component={HomePage} />
                   <Route path='/user' component={UserLogin} />
                   <Route path='/forgotpassword' component={ForgetPassword} />
                   <Route path='/registerform' component={RegisterForm} />
                   <Route path ='/features' component={FeaturePage}/>
                   <Route path ='/pricing' component={PricingPage}/>
-                  <Route path='/home' component={HomePage} />
                   <Route path='/grid' component={Grid} />
                   <Route path='/errors' component={GetErrors} />
                 </Switch>

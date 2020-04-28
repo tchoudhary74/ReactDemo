@@ -27,7 +27,7 @@ class Grid extends Component {
                                 <th>Sr. No.</th>
                                 <th>Username</th>
                                 <th>Password</th>
-                                <th>Action</th>
+                                
                             </tr>
                         </thead>
                         <tbody>
