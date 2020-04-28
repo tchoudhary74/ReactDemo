@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { withTranslation } from "react-i18next";
-import * as rk from '../../localization/resourceKeys';
+import * as rk from '../../localization/resourceKeys'
 import "./errors.css";
 
 class GetErrors extends Component {
@@ -45,8 +45,8 @@ class GetErrors extends Component {
           <>
             <div className="row errorText">
               <div className="col-md-12 text-center">
-                <p>{t(rk.ERROR_API.CONTENT1)}</p>
-                <p>{t(rk.ERROR_API.CONTENT7)}<a href='/'>{t(rk.ERROR_API.CONTENT2)}</a>{t(rk.ERROR_API.CONTENT3)}</p>
+                <p>{'text'}</p>
+                <p>{'text1'}<a href='/'>{"text2"}</a>{'text3'}</p>
               </div>
             </div>
           </>

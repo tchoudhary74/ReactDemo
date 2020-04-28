@@ -1,8 +1,9 @@
-.VWGoA-Logo {
-    margin-top: 24px;
-}
+body{ background-image: none !important; position: static;}
+header {padding: 15px 0px;}
 
-.logo {
-    width: 100%;
-    max-width: 480px;
-}
+
+.navigation-bar .navbar {background: #f9f9f9 ; border-bottom: 1px solid #ccc; padding: 0px 15px; border-top: 1px solid #ccc;}
+.navigation-bar .navbar-nav a{padding: 5px 15px; color: #212121; text-decoration: none ; line-height: 40px; font-weight: 600px; text-transform: uppercase}
+.navigation-bar .navbar-nav a:hover,
+.navigation-bar .navbar-nav a:focus,
+.navigation-bar .navbar-nav a:active{color: #7367f0;}
